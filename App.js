@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import AppLoading from 'expo-app-loading';
 import Login from './Screens/Login';
+import SignUpComponent from './Screens/SignUp';
+import Gossips from './Screens/Gossips';
 
 export default function App() {
 
@@ -23,7 +25,9 @@ export default function App() {
   else {
     return (
       <View style={styles.container}>
-        <Login />
+        {/* <Login />
+        <SignUpComponent/> */}
+        <Gossips/>
         <StatusBar style="auto" />
       </View>
     );

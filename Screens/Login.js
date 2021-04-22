@@ -40,17 +40,18 @@ Doctors and Medical Students </Text>
         onPress={onLogin}
         >
           <Text style={styles.Login}>Log In</Text>
-      </TouchableOpacity>
+        </TouchableOpacity>
       </View>
       <Text style={styles.or}>Or</Text>
       
       <TouchableOpacity
         onPress={onLogin} //Has to be changed to onGoogle Sign In
+        style={styles.button}
       >
-        <View style={styles.button}>
-          <FontAwesome name="google" size={40} color="#00D1FF" />
-          <Text style={styles.Login}>Sign In with Google</Text>
-        </View>
+       
+        <FontAwesome name="google" size={40} color="#00D1FF" />
+        <Text style={styles.Login}>Sign In with Google</Text>
+      
       </TouchableOpacity>
       
       
